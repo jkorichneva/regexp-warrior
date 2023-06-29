@@ -1,0 +1,13 @@
+.icon {
+    display: inline-block;
+    animation: tilt-shaking 0.5s linear;
+    animation-iteration-count: 3;
+}
+.affected {
+    background: red;
+}
+
+.affected.eliminate {
+    animation: fade-out 0.3s forwards;
+    animation-iteration-count: 1;
+}
