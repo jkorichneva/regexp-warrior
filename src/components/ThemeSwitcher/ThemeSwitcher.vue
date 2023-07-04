@@ -12,7 +12,7 @@ function changeTheme(e) {
 
 <template>
   <div class="main-wrapper">
-    <div class="text" id="light-theme-text">Return to Light</div>
+    <div class="text" id="light-theme-text">Light</div>
     <!-- BEGIN :: theme switch wrapper-->
     <div class="theme-switch-wrapper">
       <label for="theme-btn">
@@ -28,6 +28,6 @@ function changeTheme(e) {
         </div>
       </label>
     </div>
-    <div class="text" id="dark-theme-text">Lurk in the dark</div>
+    <div class="text" id="dark-theme-text">Dark</div>
   </div>
 </template>

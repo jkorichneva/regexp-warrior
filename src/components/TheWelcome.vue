@@ -31,9 +31,9 @@ function play() {
 </script>
 
 <template>
-  <h1>Welcome to [GameName]</h1>
+  <h1>Welcome to Regexp Wizard</h1>
   <p>
-    [GameName] is a JS game that helps you to enhance your understanding of regular expressions and
+    Regexp Wizard is a game that helps you to enhance your understanding of regular expressions and
     remember them.
   </p>
   <p>Embark on an adventure and uncover the secrets of regexp usage on your way</p>

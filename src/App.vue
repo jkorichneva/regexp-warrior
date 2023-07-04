@@ -1,18 +1,10 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import ThemeSwitcher from '@/components/ThemeSwitcher/ThemeSwitcher.vue'
+import Header from '@/components/Header/Header.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/play">Play</RouterLink>
-      </nav>
-      <ThemeSwitcher />
-    </div>
-  </header>
+  <Header />
 
   <RouterView />
 </template>
