@@ -1,6 +1,8 @@
 <script setup>
 import Scroll from '@/components/Scroll/Scroll.vue'
-defineProps(['title', 'intro'])
+import NextStepButton from '@/components/NextStepButton/NextStepButton.vue'
+const props = defineProps(['title', 'intro', 'chapterId'])
+localStorage.setItem('regexpGameProgress', JSON.stringify({ chapter: props.chapterId, level: 0 }))
 </script>
 
 <template>
@@ -8,4 +10,5 @@ defineProps(['title', 'intro'])
   <p>{{ intro }}</p>
   <Scroll />
   <Scroll />
+  <NextStepButton />
 </template>

@@ -1,8 +1,7 @@
 <script setup>
-import PlayRoom from '../pages/PlayRoom.vue'
+import LevelPage from '../pages/LevelPage.vue'
 import chapterStructure from '@/assets/chapterStructure'
 const props = defineProps(['chapterId', 'levelId'])
-console.log(props.chapterId)
 const chapterInfo = chapterStructure
   .find((chapter) => chapter.id === Number(props.chapterId))
   .levels.find((level) => level.id === Number(props.levelId))
@@ -10,7 +9,7 @@ const chapterInfo = chapterStructure
 
 <template>
   <div class="about">
-    <PlayRoom
+    <LevelPage
       :title="chapterInfo.title"
       :chapterId="props.chapterId"
       :levelId="props.levelId"

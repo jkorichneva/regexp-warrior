@@ -2,6 +2,10 @@
 import { ref } from 'vue'
 import Input from '../components/Input/Input.vue'
 import Scene from '../components/Scene/Scene.vue'
+import getNextStep from '@/helpers/getNextStep'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 const props = defineProps({
   title: {
     type: String,
@@ -52,6 +56,7 @@ function onSubmit() {
         'regexpGameProgress',
         JSON.stringify({ chapter: props.chapterId, level: props.levelId })
       )
+      router.push(getNextStep())
     } catch {}
   }
 }
