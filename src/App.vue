@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Header from '@/components/Header/Header.vue'
+import TheHeader from '@/components/TheHeader/TheHeader.vue'
 import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <Header />
+  <TheHeader />
 
   <RouterView :key="$route.fullPath" />
 </template>

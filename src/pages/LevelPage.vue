@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import Input from '../components/Input/Input.vue'
+import BaseInput from '../components/BaseInput/BaseInput.vue'
 import Scene from '../components/Scene/Scene.vue'
 import getNextStep from '@/helpers/getNextStep'
 import { useRouter } from 'vue-router'
@@ -71,7 +71,7 @@ function onSubmit() {
   </details>
   <br />
   <Scene :regex="input" :data="data" :eliminated="eliminated" />
-  <Input v-model="input" @submit="onSubmit" />
+  <BaseInput v-model="input" @submit="onSubmit" />
   <div>Your spellcasting: /{{ input }}/</div>
   <button @click="onSubmit">Eliminate!</button>
 

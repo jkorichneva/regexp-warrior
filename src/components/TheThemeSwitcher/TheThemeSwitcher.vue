@@ -1,5 +1,5 @@
 <script setup>
-import './ThemeSwitcher.css'
+import './TheThemeSwitcher.css'
 function changeTheme(e) {
   console.log(e)
   if (e.target.checked) {

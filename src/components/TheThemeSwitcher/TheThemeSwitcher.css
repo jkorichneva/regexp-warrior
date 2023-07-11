@@ -41,6 +41,7 @@
     margin: 10px;
     background: var(--secondary-color);
     border-radius: 50px;
+    cursor: pointer;
 }
 .theme-switch-wrapper input {
       display: none;
@@ -53,6 +54,7 @@
     right: 0;
     left: 0;
     bottom: 0;
+    cursor: pointer;
 }
 .theme-switch-wrapper .star {
         position: absolute;
